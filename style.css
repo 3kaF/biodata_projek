@@ -1,0 +1,22 @@
+body{
+    font-family: Arial;
+    background:#f0f0f0;
+    padding:20px;
+}
+
+h1{
+    color:darkblue;
+}
+
+table{
+    border-collapse: collapse;
+    background:white;
+}
+
+th, td{
+    padding:8px;
+}
+
+img{
+    border-radius:10px;
+}
