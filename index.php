@@ -31,6 +31,8 @@ $umur10 = $umur + 10;
 
 <body>
 
+<div class="container">
+
 <h1>BIODATA SAYA</h1>
 <hr>
 
@@ -137,6 +139,8 @@ saya ingin menjadi orang sukses dan membanggakan orang tua, menaikkan derajat or
 
 <a href="jadwal.php">Ke Halaman Jadwal</a> |
 <a href="piket.php">Ke Halaman Piket</a>
+
+</div>
 
 </body>
 </html>
