@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Jadwal Piket</title>
-<link rel="stylesheet" href="style.css">
+    <title>Jadwal Piket</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>Jadwal Piket</h1>
+<h1>JADWAL PIKET</h1>
+<hr>
 
-<table border="1">
-
+<table border="1" cellpadding="10">
 <tr>
-<th>Hari</th>
-<th>Petugas</th>
+    <th>Hari</th>
+    <th>Nama Petugas</th>
 </tr>
 
 <tr>
-<td>Senin</td>
-<td style="background:yellow;">Nama Lo</td>
+    <td>Senin</td>
+    <td>Cindy, Rasya, Nata, Yusuf, Tsabita, Habibi, Naila, Kartika</td>
 </tr>
 
 <tr>
-<td>Selasa</td>
-<td>Teman 1, Teman 2</td>
+    <td>Selasa</td>
+    <td>Keisha, Nail, Shafanira, Wahyu, Aurora, Sila, Syauqi</td>
 </tr>
 
 <tr>
-<td>Rabu</td>
-<td>Teman 3, Teman 4</td>
+    <td>Rabu</td>
+    <td>
+        Anin, Shifa, Tania, Fasya, 
+        <span class="highlight">Eka</span>, 
+        Dzaky, Vino
+    </td>
 </tr>
 
 <tr>
-<td>Kamis</td>
-<td>Teman 5, Teman 6</td>
+    <td>Kamis</td>
+    <td>Aida, Ibnu, Maharani, Tegar, Alya, Denia, Ravid</td>
 </tr>
 
 <tr>
-<td>Jumat</td>
-<td>Teman 7, Teman 8</td>
+    <td>Jumat</td>
+    <td>Aqila, Raka, Alais, Rahyan, Gendhis, Cloudya, Aziz</td>
 </tr>
 
 </table>
 
-<a href="index.php">Kembali</a>
+<br>
+<a href="index.php">Kembali ke Biodata</a>
 
 </body>
 </html>
