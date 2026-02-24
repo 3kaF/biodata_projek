@@ -2,7 +2,7 @@
 $nama = "Eka Putra Purandrita";
 $panggilan = "Eka";
 $agama = "Islam";
-$tempat = "Kota Semarang";
+$tempat = "Semarang";
 $tgl = 12;
 $bln = 4;
 $thn = 2009;
@@ -11,7 +11,10 @@ $email = "ekaputra1245p@gmail.com";
 $wa = "088226865543";
 $gender = "Laki-laki";
 $negara = "Indonesia";
-$ig = "https://www.instagram.com/ekaxzrta?igsh=MTdmZ251dWNwbzQ3ag=="; 
+$hobi1 = "Belajar hal baru";
+$hobi2 = "Main game";
+$hobi3 = "Olahraga";
+$motto = "Hidup untuk kerja, kerja untuk orang tua";
 
 $tahunSekarang = date("Y");
 $umur = $tahunSekarang - $thn;
@@ -20,58 +23,53 @@ $umur10 = $umur + 10;
 ?>
 
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Biodata <?= $panggilan; ?></title>
+<title>Biodata</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+<h1>BIODATA SAYA</h1>
+<hr>
 
-<h1>Biodata <?= $panggilan; ?></h1>
+<h2>Foto Saya</h2>
+<img src="img_IMG_20241216_183405.jpg" width="200">
 
-<section>
 <h2>Data Diri</h2>
-<p><b>Nama:</b> <?= $nama; ?></p>
-<p><b>Panggilan:</b> <?= $panggilan; ?></p>
-<p><b>Umur:</b> <?= $umur; ?> Tahun</p>
-<p><b>Agama:</b> <?= $agama; ?></p>
-<p><b>Alamat:</b> <?= $alamat; ?></p>
-<p><b>Email:</b> <?= $email; ?></p>
-<p><b>WhatsApp:</b> <?= $wa; ?></p>
-<p><b>Instagram:</b> 
-    <a href="<?= $ig; ?>" target="_blank">Klik di sini</a>
-</p>
-</section>
+<p>Nama Lengkap : <?php echo $nama; ?></p>
+<p>Nama Panggilan : <?php echo $panggilan; ?></p>
+<p>Tempat, Tanggal Lahir : <?php echo $tempat.", ".$tgl."-".$bln."-".$thn; ?></p>
+<p>Umur : <?php echo $umur; ?> Tahun</p>
+<p>Jenis Kelamin : <?php echo $gender; ?></p>
+<p>Agama : <?php echo $agama; ?></p>
+<p>Alamat : <?php echo $alamat; ?></p>
+<p>Email : <?php echo $email; ?></p>
+<p>No WA : <?php echo $wa; ?></p>
+<p>Kewarganegaraan : <?php echo $negara; ?></p>
 
 <hr>
 
-<section>
-<h2>10 Tahun Lagi</h2>
+<h2>Keinginan 10 Tahun Lagi</h2>
 <p>
-Hai, namaku <?= $panggilan; ?>.  
-Sekarang tahun <?= $tahunSekarang; ?> dan umurku <?= $umur; ?> tahun.  
-10 tahun lagi di tahun <?= $tahun10; ?> umurku <?= $umur10; ?> tahun.  
+Hai namaku <?php echo $panggilan; ?>.
+Saat ini tahun <?php echo $tahunSekarang; ?> umurku <?php echo $umur; ?> tahun.
+10 tahun lagi di tahun <?php echo $tahun10; ?> umurku <?php echo $umur10; ?> tahun.
 saya ingin menjadi orang sukses dan membanggakan orang tua, menaikkan derajat orang tua dan mobil BMW.
 </p>
-</section>
 
 <hr>
 
-<section>
 <h2>Hobi</h2>
 <ol>
-<li>Belajar hal baru</li>
-<li>Main Game</li>
-<li>Olahraga</li>
+<li><?php echo $hobi1; ?></li>
+<li><?php echo $hobi2; ?></li>
+<li><?php echo $hobi3; ?></li>
 </ol>
 
 <h2>Makanan Favorit</h2>
-<ul>
+<ul type="square">
 <li>Nasi Goreng</li>
 <li>Ayam Geprek</li>
 <li>Mie Ayam</li>
@@ -83,11 +81,9 @@ saya ingin menjadi orang sukses dan membanggakan orang tua, menaikkan derajat or
 <li>Jus Alpukat</li>
 <li>Air Mineral</li>
 </ol>
-</section>
 
 <hr>
 
-<section>
 <h2>Skills</h2>
 
 <p>HTML</p>
@@ -98,13 +94,10 @@ saya ingin menjadi orang sukses dan membanggakan orang tua, menaikkan derajat or
 
 <p>PHP</p>
 <input type="range" min="0" max="100" value="60">
-</section>
 
 <hr>
 
-<section>
 <h2>Riwayat Pendidikan</h2>
-
 <table border="1" cellpadding="8">
 <tr>
 <th>Tingkat</th>
@@ -133,25 +126,17 @@ saya ingin menjadi orang sukses dan membanggakan orang tua, menaikkan derajat or
 <td>2025</td>
 <td>-</td>
 </tr>
-
 </table>
-</section>
 
 <hr>
 
-<section>
-<h2>Foto</h2>
-<img src="img_IMG_20241216_183405.jpg" width="200">
-</section>
+<h2>Motto Hidup</h2>
+<marquee direction="left"><?php echo $motto; ?></marquee>
 
 <hr>
 
-<nav>
-<a href="jadwal.php">Halaman Jadwal</a> |
-<a href="piket.php">Halaman Piket</a>
-</nav>
-
-</div>
+<a href="jadwal.php">Ke Halaman Jadwal</a> |
+<a href="piket.php">Ke Halaman Piket</a>
 
 </body>
 </html>
