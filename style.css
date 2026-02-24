@@ -1,89 +1,95 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
 body{
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    margin:0;
-    padding:30px;
-    color:#333;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
 }
 
-
-.container{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
-
-
+/* Judul */
 h1{
-    text-align:center;
-    color:#4a4a4a;
-    margin-bottom:30px;
+    text-align: center;
+    color: #2c3e50;
 }
 
 h2{
-    margin-top:30px;
-    color:#764ba2;
-    border-left:5px solid #667eea;
-    padding-left:10px;
+    color: #34495e;
+    margin-top: 25px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
 }
 
-
-a{
-    text-decoration:none;
-    color:white;
-    background:#667eea;
-    padding:8px 14px;
-    border-radius:8px;
-    transition:0.3s;
+/* Paragraf */
+p{
+    line-height: 1.6;
 }
 
-a:hover{
-    background:#764ba2;
-}
-
-
+/* Tabel */
 table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:10px;
-    background:#fafafa;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
 }
 
 th{
-    background:#667eea;
-    color:white;
+    background: #3498db;
+    color: white;
 }
 
 th, td{
-    padding:10px;
-    text-align:center;
-    border:1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
 }
 
 tr:nth-child(even){
-    background:#f2f2f2;
+    background: #f2f2f2;
 }
 
-
-img{
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-    margin-top:10px;
+/* List */
+ol{
+    padding-left: 20px;
 }
 
+ul{
+    padding-left: 20px;
+}
 
+/* Range Skill */
 input[type="range"]{
-    width:100%;
-    accent-color:#764ba2;
+    width: 100%;
+    accent-color: #3498db;
 }
 
+/* Gambar */
+img{
+    border-radius: 10px;
+    border: 3px solid #3498db;
+    margin-top: 10px;
+}
 
-section{
-    margin-bottom:25px;
+/* Link */
+a{
+    text-decoration: none;
+    background: #3498db;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+a:hover{
+    background: #2c3e50;
+}
+
+/* Motto */
+marquee{
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+.highlight{
+    background-color: yellow;
+    font-weight: bold;
+    padding: 3px;
 }
