@@ -1,17 +1,17 @@
 <?php
-// ===== DATA BIODATA =====
-$nama = "Eka putra purandrita";
+$nama = "Eka Putra Purandrita";
 $panggilan = "Eka";
 $agama = "Islam";
 $tempat = "Kota Semarang";
 $tgl = 12;
 $bln = 4;
 $thn = 2009;
-$alamat = "JL medoho permai 02";
+$alamat = "Jl. Medoho Permai 02";
 $email = "ekaputra1245p@gmail.com";
 $wa = "088226865543";
 $gender = "Laki-laki";
 $negara = "Indonesia";
+$ig = "https://www.instagram.com/ekaxzrta?igsh=MTdmZ251dWNwbzQ3ag=="; 
 
 $tahunSekarang = date("Y");
 $umur = $tahunSekarang - $thn;
@@ -20,60 +20,74 @@ $umur10 = $umur + 10;
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-<title>Biodata</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata <?= $panggilan; ?></title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Biodata</h1>
+<div class="container">
 
-<p>Nama : <?php echo $nama; ?></p>
-<p>Panggilan : <?php echo $panggilan; ?></p>
-<p>Umur : <?php echo $umur; ?></p>
-<p>Email : <?php echo $email; ?></p>
+<h1>Biodata <?= $panggilan; ?></h1>
 
-<hr>
-
-<h2>10 Tahun Lagi</h2>
-
-<p>
-Hai namaku <?php echo $panggilan; ?>.
-Saat ini tahun <?php echo $tahunSekarang; ?> umurku <?php echo $umur; ?> tahun.
-10 tahun lagi di tahun <?php echo $tahun10; ?> umurku <?php echo $umur10; ?>.
-Aku ingin menjadi orang sukses.
+<section>
+<h2>Data Diri</h2>
+<p><b>Nama:</b> <?= $nama; ?></p>
+<p><b>Panggilan:</b> <?= $panggilan; ?></p>
+<p><b>Umur:</b> <?= $umur; ?> Tahun</p>
+<p><b>Agama:</b> <?= $agama; ?></p>
+<p><b>Alamat:</b> <?= $alamat; ?></p>
+<p><b>Email:</b> <?= $email; ?></p>
+<p><b>WhatsApp:</b> <?= $wa; ?></p>
+<p><b>Instagram:</b> 
+    <a href="<?= $ig; ?>" target="_blank">Klik di sini</a>
 </p>
+</section>
 
 <hr>
 
-<a href="jadwal.php">Ke Jadwal</a>
-<br>
-<a href="piket.php">Ke Piket</a>
+<section>
+<h2>10 Tahun Lagi</h2>
+<p>
+Hai, namaku <?= $panggilan; ?>.  
+Sekarang tahun <?= $tahunSekarang; ?> dan umurku <?= $umur; ?> tahun.  
+10 tahun lagi di tahun <?= $tahun10; ?> umurku <?= $umur10; ?> tahun.  
+saya ingin menjadi orang sukses dan membanggakan orang tua, menaikkan derajat orang tua dan mobil BMW.
+</p>
+</section>
 
+<hr>
+
+<section>
 <h2>Hobi</h2>
 <ol>
-    <li>belajar hal baru</li>
-    <li>Main Game</li>
-    <li>Olahraga kalo pengen </li>
+<li>Belajar hal baru</li>
+<li>Main Game</li>
+<li>Olahraga</li>
 </ol>
 
 <h2>Makanan Favorit</h2>
-<ul type="square">
-    <li>Nasi Goreng</li>
-    <li>Ayam Geprek</li>
-    <li>Mie Ayam</li>
+<ul>
+<li>Nasi Goreng</li>
+<li>Ayam Geprek</li>
+<li>Mie Ayam</li>
 </ul>
 
 <h2>Minuman Favorit</h2>
 <ol type="A">
-    <li>kopi</li>
-    <li>Jus Alpukat</li>
-    <li>Air Mineral</li>
+<li>Kopi</li>
+<li>Jus Alpukat</li>
+<li>Air Mineral</li>
 </ol>
+</section>
 
+<hr>
 
+<section>
 <h2>Skills</h2>
 
 <p>HTML</p>
@@ -84,54 +98,60 @@ Aku ingin menjadi orang sukses.
 
 <p>PHP</p>
 <input type="range" min="0" max="100" value="60">
+</section>
 
+<hr>
 
+<section>
 <h2>Riwayat Pendidikan</h2>
 
-<table border="1">
+<table border="1" cellpadding="8">
 <tr>
-    <th>Tingkat</th>
-    <th>Nama Sekolah</th>
-    <th>Tahun Masuk</th>
-    <th>Tahun Lulus</th>
+<th>Tingkat</th>
+<th>Nama Sekolah</th>
+<th>Tahun Masuk</th>
+<th>Tahun Lulus</th>
 </tr>
 
 <tr>
-    <td>SD</td>
-    <td>SD Negeri sambirejo 01</td>
-    <td>2014</td>
-    <td>2022</td>
+<td>SD</td>
+<td>SD Negeri Sambirejo 01</td>
+<td>2014</td>
+<td>2022</td>
 </tr>
 
 <tr>
-    <td>SMP</td>
-    <td>SMP Negeri 15 Semarang</td>
-    <td>2022</td>
-    <td>2024</td>
+<td>SMP</td>
+<td>SMP Negeri 15 Semarang</td>
+<td>2022</td>
+<td>2024</td>
 </tr>
 
 <tr>
-    <td>SMK</td>
-    <td>SMK Negeri 8 Semarang</td>
-    <td>2025</td>
-    <td>-</td>
+<td>SMK</td>
+<td>SMK Negeri 8 Semarang</td>
+<td>2025</td>
+<td>-</td>
 </tr>
 
 </table>
+</section>
 
-<h2>Foto Saya</h2>
-<img src="img/IMG_20241216_183354.jpg" width="200">
+<hr>
 
-<h2>Motto Hidup</h2>
+<section>
+<h2>Foto</h2>
+<img src="img_IMG_20241216_183405.jpg" width="200">
+</section>
 
-<marquee behavior="scroll" direction="left">
-Jangan nyerah sebelum berhasil
-</marquee>
+<hr>
 
-<h2>Menu</h2>
+<nav>
+<a href="jadwal.php">Halaman Jadwal</a> |
+<a href="piket.php">Halaman Piket</a>
+</nav>
 
-<a href="jadwal.php">Ke Halaman Jadwal</a><br>
-<a href="piket.php">Ke Halaman Piket</a>
+</div>
 
 </body>
 </html>
